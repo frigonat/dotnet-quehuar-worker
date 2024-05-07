@@ -1,0 +1,5 @@
+DataAccessRegistry:
+  Name: "default"
+  ReadOnlyConnection: "Data Source=NB100791\\SQLEXPRESS;Initial Catalog=challenger;Persist Security Info=True;User ID=challenger;Password=seisMiles;TrustServerCertificate=true"
+  TransactionalConnection: "Data Source=NB100791\\SQLEXPRESS;Initial Catalog=challenger;Persist Security Info=True;User ID=challenger;Password=seisMiles;TrustServerCertificate=true"
+  ProviderName: System.Data.SqlClient
