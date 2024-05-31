@@ -4,6 +4,9 @@
     <Version>8.2.2</Version>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Remove="Services\WorkerServices.cs" />
+  </ItemGroup>
+  <ItemGroup>
     <None Remove="appsettings.Development.yml" />
     <None Remove="appsettings.Testing.yml" />
     <None Remove="appsettings.yml" />
@@ -40,6 +43,9 @@
   <ItemGroup>
     <ProjectReference Include="..\Application\Application.csproj" />
     <ProjectReference Include="..\Infrastructure\Infrastructure.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Services\" />
   </ItemGroup>
   <PropertyGroup>
     <GenerateDocumentationFile>true</GenerateDocumentationFile>

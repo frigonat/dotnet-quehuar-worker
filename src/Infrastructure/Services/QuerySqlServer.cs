@@ -22,5 +22,11 @@ namespace dotnet_quehuar_worker.Infrastructure.Services
         {
           return await _context.Person.FirstAsync(x => x.Nombre == name);
         }
+
+        public async Task<Numerador> GetByCentroEmisorAsync(int centroEmisorBuscador)
+        {
+            return await _context.Numerador.FirstAsync(x => x.centroEmisor == centroEmisorBuscador);
+        }
+
     }
 }

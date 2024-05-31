@@ -14,10 +14,11 @@ namespace dotnet_quehuar_worker.Infrastructure.Persistence.Configurations
         public void Configure(EntityTypeBuilder<Numerador> builder)
         {
             builder.ToTable("numerador");
-            builder.Property(e => e.id);
+            builder.HasKey(e => e.centroEmisor);
+            builder.Property(e => e.centroEmisor);
             builder.Property(e => e.ultimoNumero);
             builder.Property(e => e.fechaHoraUltimoNumero);
         }
     }
 }
-}
+

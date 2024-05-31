@@ -1,5 +1,6 @@
 ﻿using dotnet_quehuar_worker.Domain.Entities;
 using Microsoft.EntityFrameworkCore;
+using System.Diagnostics.Contracts;
 using System.Reflection;
 
 namespace dotnet_quehuar_worker.Infrastructure.Persistence;
@@ -17,5 +18,7 @@ public class ApplicationDbContext : DbContext
         modelBuilder.ApplyConfigurationsFromAssembly(Assembly.GetExecutingAssembly());
 
         base.OnModelCreating(modelBuilder);
+
     }
+
 }

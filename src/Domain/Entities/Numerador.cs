@@ -8,8 +8,8 @@ namespace dotnet_quehuar_worker.Domain.Entities
 {
     public class Numerador
     {
-        public int id { get; set; } 
+        public int centroEmisor { get; set; } 
         public int ultimoNumero {  get; set; }
-        public int fechaHoraUltimoNumero { get; set; }
+        public DateTime fechaHoraUltimoNumero { get; set; }
     }
 }

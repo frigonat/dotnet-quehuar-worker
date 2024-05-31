@@ -7,5 +7,7 @@ namespace dotnet_quehuar_worker.Application.Common.Interfaces
     public interface IQuerySqlServer: IReadOnlyQuery
     {
         public Task<Person> GetPersonByNameAsync(string name);
+
+        public Task<Numerador> GetByCentroEmisorAsync(int centroEmisorBuscado);
     }
 }

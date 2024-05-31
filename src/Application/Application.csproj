@@ -15,6 +15,7 @@
     <ProjectReference Include="..\Domain\Domain.csproj" />
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="UseCase\V1\PedidoOperation\Commands\Publish\" />
     <Folder Include="UseCase\V2\" />
   </ItemGroup>
 </Project>
